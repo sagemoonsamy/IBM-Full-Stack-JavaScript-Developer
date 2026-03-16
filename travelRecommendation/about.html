@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations | About Us</title>
+    <style>
+        /* Shared Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            min-height: 100%;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Simplified Navbar */
+        nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover { color: #2ecc71; }
+
+        /* About Section Content */
+        .about-container {
+            padding: 60px 8%;
+            max-width: 1000px;
+        }
+
+        .about-intro h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            border-left: 5px solid #2ecc71;
+            padding-left: 20px;
+        }
+
+        .about-intro p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 50px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Team Section */
+        .team-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+            border: 3px solid #2ecc71;
+        }
+
+        .team-member h3 { margin: 10px 0 5px 0; }
+        .team-member p { color: #2ecc71; font-weight: bold; margin: 0; }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="about-container">
+        <section class="about-intro">
+            <h1>Our Mission</h1>
+            <p>
+                At Travel Recommendations, we believe that travel is more than just visiting a place—it's about the stories we tell and the perspectives we gain. Founded in 2026, our mission is to simplify your travel planning by providing hand-picked recommendations that cater to every type of adventurer. From the hidden alleys of Kyoto to the sun-drenched coasts of Amalfi, we help you discover the world differently.
+            </p>
+        </section>
+
+        <section class="team-section">
+            <div class="team-member">
+                <img src="https://i.pravatar.cc/150?u=ceo" alt="CEO">
+                <h3>Sarah Jenkins</h3>
+                <p>Founder & Lead Explorer</p>
+            </div>
+
+            <div class="team-member">
+                <img src="https://i.pravatar.cc/150?u=tech" alt="CTO">
+                <h3>Marcus Chen</h3>
+                <p>Chief Technology Officer</p>
+            </div>
+
+            <div class="team-member">
+                <img src="https://i.pravatar.cc/150?u=design" alt="Designer">
+                <h3>Elena Rodriguez</h3>
+                <p>Head of Experience Design</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
